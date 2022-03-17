@@ -1,0 +1,628 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-27 01:50+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: luggage/templates/_dialogs.html:12
+msgid "REFINE YOUR SEARCH"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:21
+msgid "Luggage Size"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:26 luggage/templates/home.html.py:41
+msgid "All Sizes"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:38
+msgid "Luggage Class"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:43
+msgid "All Classes"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:55
+msgid "Number of wheels"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:60
+msgid "All Wheels"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:74
+msgid "APPLY FILTERS"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:89
+msgid "Luggage added"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:92
+msgid "Cart was successfully updated"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:111
+msgid "Password reset successful"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:114
+msgid ""
+"We've emailed you instructions for setting your password. You should be "
+"receiving them shortly."
+msgstr ""
+"We've emailed you instructions for resetting your password. You should be "
+"receiving them shortly."
+
+#: luggage/templates/_dialogs.html:116
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with, and check your spam folder."
+msgstr ""
+"If you don't receive an email, please make sure you've entered your correct "
+"email address and check your spam folder."
+
+#: luggage/templates/_dialogs.html:137
+msgid "Reset your password"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:140 luggage/templates/_dialogs.html:163
+#: luggage/templates/_dialogs.html:192 luggage/templates/account.html.py:19
+#: luggage/templates/login.html:17 luggage/templates/signup.html.py:17
+msgid "Email"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:142
+msgid "RESET"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:144 luggage/templates/_dialogs.html:173
+#: luggage/templates/signup.html.py:27
+msgid "Already have an account?"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:144 luggage/templates/_dialogs.html:173
+#: luggage/templates/signup.html.py:27
+msgid "Sign in"
+msgstr "Log in"
+
+#: luggage/templates/_dialogs.html:160
+msgid "Signup to checkout"
+msgstr "Sign up to checkout"
+
+#: luggage/templates/_dialogs.html:167 luggage/templates/account.html.py:23
+#: luggage/templates/signup.html:21
+msgid "Phone"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:169 luggage/templates/_dialogs.html:194
+#: luggage/templates/account.html.py:27 luggage/templates/login.html:19
+#: luggage/templates/signup.html.py:23
+msgid "Password"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:171 luggage/templates/signup.html.py:25
+msgid "SIGNUP"
+msgstr "SIGN UP"
+
+#: luggage/templates/_dialogs.html:189
+msgid "Signin to checkout"
+msgstr "Log in to checkout"
+
+#: luggage/templates/_dialogs.html:196 luggage/templates/already_reset.html:19
+#: luggage/templates/login.html:21
+msgid "SIGNIN"
+msgstr "LOG IN"
+
+#: luggage/templates/_dialogs.html:198 luggage/templates/login.html.py:23
+msgid "Don’t have an account?"
+msgstr "Don't have an account?"
+
+#: luggage/templates/_dialogs.html:198 luggage/templates/login.html.py:23
+msgid "Signup"
+msgstr "Sign up"
+
+#: luggage/templates/_dialogs.html:199 luggage/templates/login.html.py:24
+msgid "Forgot Password?"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:216 luggage/templates/_dialogs.html:255
+msgid "Add Delivery Address"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:221
+msgid "Name"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:227
+msgid "Street Address"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:233 luggage/templates/home.html.py:31
+msgid "Select City"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:240 luggage/templates/home.html.py:26
+msgid "Select State"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:245 luggage/templates/home.html.py:18
+msgid "Select Country"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:249
+msgid "Zipcode"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:273
+msgid "Add Payment Method"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:278
+msgid "Card Number"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:284
+msgid "Name on Card"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:290
+msgid "Expiry"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:294
+msgid "Month"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:302
+msgid "Year"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:309
+msgid "CVV"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:315
+msgid "Add Credit Card"
+msgstr ""
+
+#: luggage/templates/account.html:9
+msgid "Your Account"
+msgstr ""
+
+#: luggage/templates/account.html:13
+msgid "Basic Info"
+msgstr ""
+
+#: luggage/templates/account.html:29
+msgid "Confirm Password"
+msgstr ""
+
+#: luggage/templates/account.html:31
+msgid "Update Info"
+msgstr ""
+
+#: luggage/templates/account.html:38
+msgid "Address"
+msgstr ""
+
+#: luggage/templates/account.html:38 luggage/templates/account.html.py:68
+msgid "Add New"
+msgstr ""
+
+#: luggage/templates/account.html:46 luggage/templates/account.html.py:57
+#: luggage/templates/account.html:76 luggage/templates/account.html.py:87
+#: luggage/templates/cart.html:48 luggage/templates/cart.html.py:97
+#: luggage/templates/cart.html:134
+msgid "Remove"
+msgstr ""
+
+#: luggage/templates/account.html:64 luggage/templates/cart.html.py:104
+msgid "You don't have any addresses yet"
+msgstr "You don't have any address registerd yet"
+
+#: luggage/templates/account.html:68
+msgid "Payment Methods"
+msgstr ""
+
+#: luggage/templates/account.html:94 luggage/templates/cart.html.py:141
+msgid "You don't have any payments yet"
+msgstr "You don't have any payment method registered"
+
+#: luggage/templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr ""
+
+#: luggage/templates/already_reset.html:13
+msgid "Password reset complete"
+msgstr "Password reset sucessfull"
+
+#: luggage/templates/already_reset.html:16
+msgid "Your password has been set.  You may go ahead and log in"
+msgstr "Your password has been set. You may now log in"
+
+#: luggage/templates/base.html:42
+msgid "Toggle navigation"
+msgstr ""
+
+#: luggage/templates/base.html:47
+msgid "Get Luggage"
+msgstr ""
+
+#: luggage/templates/base.html:53 luggage/templates/cart.html.py:74
+#: luggage/templates/orders.html:72
+msgid "Find your luggage"
+msgstr ""
+
+#: luggage/templates/base.html:57
+msgid "How does it work"
+msgstr ""
+
+#: luggage/templates/base.html:60 luggage/templates/home.html.py:124
+msgid "Testimonials"
+msgstr ""
+
+#: luggage/templates/base.html:65
+msgid "Current Orders"
+msgstr ""
+
+#: luggage/templates/base.html:69
+msgid "Your account"
+msgstr ""
+
+#: luggage/templates/base.html:72
+msgid "Settings"
+msgstr ""
+
+#: luggage/templates/base.html:75
+msgid "Logout"
+msgstr ""
+
+#: luggage/templates/base.html:81
+msgid "Login"
+msgstr "Log in"
+
+#: luggage/templates/base.html:90
+msgid "Cart"
+msgstr ""
+
+#: luggage/templates/base.html:115
+msgid "Got Questions? Call us on +8723 3764873"
+msgstr "Got Questions? Call us on +52 55 67190944"
+
+#: luggage/templates/base.html:122 luggage/templates/base_internal.html:21
+msgid "©2016 GetLugagge Inc. All rights reserved."
+msgstr "©2016 Luggary Inc. All rights reserved."
+
+#: luggage/templates/cart.html:34 luggage/templates/details.html.py:56
+#: luggage/templates/orders.html:34 luggage/templates/search.html.py:50
+msgid "day"
+msgstr ""
+
+#: luggage/templates/cart.html:37 luggage/templates/details.html.py:63
+msgid "Quantity"
+msgstr ""
+
+#: luggage/templates/cart.html:41 luggage/templates/details.html.py:67
+msgid "Days"
+msgstr ""
+
+#: luggage/templates/cart.html:55
+#, python-format
+msgid "Subtotal (<span>%(count)s</span> Items)"
+msgstr ""
+
+#: luggage/templates/cart.html:56 luggage/templates/details.html.py:58
+#, python-format
+msgid ""
+"You’re saving $<b>%(total_save)s</b>%(sfx)s by renting these items and not "
+"buying them. Spend it on your trip"
+msgstr ""
+"You're saving $<b>%(total_save)s</b>%(sfx)s by renting these items and not "
+"buying them."
+
+#: luggage/templates/cart.html:63
+msgid "CHECKOUT NOW"
+msgstr ""
+
+#: luggage/templates/cart.html:69
+msgid "Your cart is empty"
+msgstr ""
+
+#: luggage/templates/cart.html:86
+msgid "Select Address"
+msgstr ""
+
+#: luggage/templates/cart.html:108
+msgid "Add Another Address"
+msgstr ""
+
+#: luggage/templates/cart.html:109
+msgid "Deliver To This Address"
+msgstr ""
+
+#: luggage/templates/cart.html:123
+msgid "Select Payment"
+msgstr ""
+
+#: luggage/templates/cart.html:145
+msgid "Add Another Card"
+msgstr ""
+
+#: luggage/templates/cart.html:146
+msgid "Confirm Rental"
+msgstr "Confirm order"
+
+#: luggage/templates/cart.html:160
+#, fuzzy
+#| msgid "Rental Order Placed"
+msgid "Rental Order Error"
+msgstr "Order Placed"
+
+#: luggage/templates/cart.html:163
+msgid ""
+"Your order cannot be placed. Please check that your card has enough found to "
+"make this order, and try later. If the the error remains, please contact us."
+msgstr ""
+"Your order cannot be placed. Please check that your card has enough funds to "
+"complete this order, and try later. If the the error remains, please contact us."
+
+#: luggage/templates/cart.html:180
+msgid "Rental Order Placed"
+msgstr "Order Placed"
+
+#: luggage/templates/cart.html:183
+msgid ""
+"Your order has been placed <br>and wil be delivered at your<br> doorsteps in "
+"4-6 hours."
+msgstr ""
+"Your order has been placed <br>we will be delivering your luggage <br>in the "
+"next 24 hours."
+
+#: luggage/templates/details.html:13
+msgid "Go back to search results"
+msgstr ""
+
+#: luggage/templates/details.html:54
+msgid "Features"
+msgstr ""
+
+#: luggage/templates/details.html:72
+msgid "ADD TO RENT CART"
+msgstr "ADD TO CART"
+
+#: luggage/templates/details.html:73
+msgid "RENT NOW"
+msgstr ""
+
+#: luggage/templates/home.html:9
+msgid "Find the right luggage for you"
+msgstr "Rent the right luggage for your trip"
+
+#: luggage/templates/home.html:10
+msgid "We serve in 127 Cities in 54 Countries"
+msgstr "Save Money, Space and Time"
+
+#: luggage/templates/home.html:36
+msgid "What kind of luggage are you looking for?"
+msgstr ""
+
+#: luggage/templates/home.html:48
+msgid "SEARCH"
+msgstr ""
+
+#: luggage/templates/home.html:56
+msgid "About GetLuggage"
+msgstr "About Luggary"
+
+#: luggage/templates/home.html:58
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+"quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo "
+"consequat. Duis"
+msgstr ""
+"At Luggary we take your traveling experience to a whole new level! Rent the "
+"right luggage and pay only for the days you use them. Don’t spend money on "
+"new luggage that you only use once a year. Get rid of your old worn out and "
+"damaged luggage and stop cluttering them in your home. Save money, space, "
+"time and start renting the right luggage. …. Oh! By the way, we deliver "
+"right at your doorstep :)"
+
+#: luggage/templates/home.html:64
+msgid "Why rent luggage?"
+msgstr ""
+
+#: luggage/templates/home.html:69
+msgid "Occupies too<br> much space"
+msgstr ""
+
+#: luggage/templates/home.html:75
+msgid "Ditch your old<br> looking suitcase"
+msgstr ""
+
+#: luggage/templates/home.html:83
+msgid "Save hundreds of dollars and <br> spend it on your actual trip"
+msgstr ""
+
+#: luggage/templates/home.html:91
+msgid "How it works"
+msgstr ""
+
+#: luggage/templates/home.html:97
+msgid ""
+"Choose the right luggage for your trip lorem ipsum dolor sit amet adipising "
+"elit"
+msgstr "Choose the right luggage for your trip"
+
+#: luggage/templates/home.html:104
+msgid "Add to cart and checkout lorem ipsum dolor sit amet adipising elit"
+msgstr "Add to cart, Select your dates and checkout"
+
+#: luggage/templates/home.html:111
+msgid ""
+"We deliver the luggage at your doorsteps lorem ipsum dolor sit amet "
+"adipising elit"
+msgstr "We deliver your order 24 hrs before your journey"
+
+#: luggage/templates/home.html:128
+msgid "Amazing!!"
+msgstr "Life Changer!"
+
+#: luggage/templates/home.html:130
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+"quis nostrud exercitation ull1"
+msgstr ""
+"I had an emergency trip and didn’t have anything to pack in, Luggary saved "
+"the day! My luggage was delivered in less than 24 hrs."
+
+#: luggage/templates/home.html:133
+msgid "Deborah Simmons"
+msgstr "Leonor Martinez"
+
+#: luggage/templates/home.html:136
+msgid "Photojournalist, Texas"
+msgstr "Entreprenuer, Mexico"
+
+#: luggage/templates/home.html:145
+msgid "Made life easier!!"
+msgstr ""
+
+#: luggage/templates/home.html:147
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+"quis nostrud exercitation ull2"
+msgstr ""
+"I live in a small apartment and my luggage was taking too much space. My "
+"friend recommended Luggary; I got rid of all my luggage and now I rent."
+
+#: luggage/templates/home.html:150
+msgid "Anthony Hopkins"
+msgstr "Seung Cheol"
+
+#: luggage/templates/home.html:153
+msgid "Backpacker, San Francisco"
+msgstr "Student, Chicago"
+
+#: luggage/templates/home.html:162
+msgid "Best Service Ever"
+msgstr ""
+
+#: luggage/templates/home.html:164
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+"quis nostrud exercitation ull3"
+msgstr ""
+"I love this new concept! No more spending in expensive trendy luggage! I can "
+"just rent it whenever I need it!"
+
+#: luggage/templates/home.html:167
+msgid "Jonathan Rogers"
+msgstr "Therese Gotlib"
+
+#: luggage/templates/home.html:170
+msgid "Blogger, Rio De Janeiro"
+msgstr "Architect, Miami"
+
+#: luggage/templates/home.html:182
+msgid "Why wait? <strong>Start packing!</strong>"
+msgstr ""
+
+#: luggage/templates/home.html:183
+msgid "GET STARTED"
+msgstr "RENT NOW"
+
+#: luggage/templates/login.html:15
+msgid "Signin"
+msgstr "Log in"
+
+#: luggage/templates/new_password.html:12
+msgid "Reset pasword"
+msgstr "Reset password"
+
+#: luggage/templates/new_password.html:13
+msgid "Please enter your new password"
+msgstr ""
+
+#: luggage/templates/new_password.html:18
+msgid "Submit"
+msgstr ""
+
+#: luggage/templates/new_password.html:21
+msgid "This reset link is no longer valid!"
+msgstr ""
+
+#: luggage/templates/orders.html:53
+msgid "RETURN THE ITEM"
+msgstr ""
+
+#: luggage/templates/orders.html:61
+msgid "RETURN ALL ITEMS"
+msgstr ""
+
+#: luggage/templates/orders.html:67
+msgid "You dont have active orders"
+msgstr "You don't have active orders"
+
+#: luggage/templates/orders.html:84
+msgid "Request Return Pickup"
+msgstr "Request Pickup"
+
+#: luggage/templates/orders.html:87
+msgid "Choose a conveninent time for pickup. "
+msgstr ""
+
+#: luggage/templates/orders.html:93
+msgid "Return Time"
+msgstr ""
+
+#: luggage/templates/search.html:14
+#, python-format
+msgid ""
+"\n"
+"                    Showing %(from)s-%(to)s of %(count)s results for "
+"%(size)s available at %(country)s, %(region)s %(city)s\n"
+"                    "
+msgstr ""
+
+#: luggage/templates/search.html:19
+msgid "Refine Search"
+msgstr ""
+
+#: luggage/templates/search.html:61
+msgid "Nothing found"
+msgstr ""
+
+#: luggage/templates/search.html:62
+msgid "Try to refine you search criteria"
+msgstr ""
+
+#: luggage/templates/signup.html:15
+msgid "Signup to get started"
+msgstr "Sign up to get started"
+
+#: project/settings.py:52
+msgid "English"
+msgstr ""
+
+#: project/settings.py:53
+msgid "Spanish"
+msgstr ""

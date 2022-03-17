@@ -1,0 +1,11 @@
+{% autoescape off %}
+You get this email because you you sent reset form on site {{ site_name }}.
+
+Please, go to this link and select a new password
+{% block reset_link %}
+{{ protocol }}://{{ domain }}{% url 'reset_password' uidb64=uid token=token %}
+{% endblock %}
+
+"Thank you for use our site!"
+
+{% endautoescape %}

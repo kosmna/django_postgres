@@ -1,0 +1,110 @@
+{% extends 'base_internal.html' %}
+{% load staticfiles %}
+{% load core_extra %}
+{% load i18n %}
+{% load currency %}
+{% load thumbnail %}
+
+
+{% block internal_content %}
+    <section id="orders">
+        <div class="container">
+            {% if items %}
+                {% for order in items %}
+                {% with bag=order.luggage %}
+                    <div class="row results vcenter">
+                        <div class="col-md-1 col-xs-6">
+                            <img class="thumb" src="{{ bag.photos.all.first.photo | thumbnail_url:"details_big" }}">
+                        </div>
+                        <div class="col-md-8 col-xs-6">
+                            <ul class="stats">
+                                <li>
+                                    {{ bag.luggage_size.title }}
+                                </li>
+                                <li>
+                                    {{ bag.luggage_wheels.title }}
+                                </li>
+                                <li>
+                                    {{ bag.luggage_class.title }}
+                                </li>
+                            </ul>
+                            <h1>{{ bag.title }}</h1>
+                            <div class="subline">
+                                <div class="price_small">
+                                ${{ bag.day_price|currency:CURRENCY.code|money_sfx:CURRENCY.code }}/{% trans 'day' %}
+                                </div>
+                                {% if order.expired  %}
+                                <div class="due_date error">
+                                    {{ order.duedate }} ({{ order.expired }} days exceed)
+                                </div>
+                                {% else %}
+                                <div class="due_date">
+                                    {{ order.duedate }}
+                                </div>
+                                {% endif %}
+                            </div>
+                            {% if order.scheduled_return_time %}
+                            <div class="subline">
+                                Scheduled return at {{ order.scheduled_return_time}}
+                            </div>
+                            {% endif %}
+                        </div>
+                        <div class="col-md-2 align-right">
+                            <a href="#return-item" data-id="{{ order.pk }}" class="return_item btn btn-primary">{% trans "RETURN THE ITEM" %}</a>
+                        </div>
+                    </div>
+                {% endwith %}
+                {% endfor %}
+                <div class="row subtotal align-right">
+                    <div class="col-md-10 col-md-offset-1">
+                        <a href="#return-item" data-id="all" class="return_item btn btn-lg btn-primary refine-search">
+                            {% trans "RETURN ALL ITEMS" %}
+                        </a>
+                    </div>
+                </div>
+            {% else %}
+                <div class="row empty-cart text-center">
+                    <h1>{% trans "You dont have active orders" %}</h1>
+                    <div>
+                        <img src="{% static 'img/empty_cart.png' %}">
+                    </div>
+                    <a href="{% url 'home' %}" class="btn btn-lg btn-primary">
+                        {% trans "Find your luggage" %}
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+    </section>
+    <div style="display:none">
+        <div id="return-item" class="modal_form wide">
+            <div class="modal-container">
+                <div class="complete">
+                    <a class="close-btn" href="#" onClick="parent.jQuery.fancybox.close();"></a>
+                        <form>
+                            <h2 class="text-center">{% trans "Request Return Pickup" %}</h2>
+                            <br>
+                            <h3 class="text-center">
+                                {% trans "Choose a conveninent time for pickup. " %}
+                            </h3>
+
+                            <div class="row text-center">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <select id="returntime" name="returntime"  parsley-required="true">
+                                        <option value=''>{% trans "Return Time" %}</option>
+                                        {% for el in returntimes %}
+                                            <option value='{{el.id}}'>{{el.title}}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+
+                            <br>
+                            <div class="text-center">
+                                <a data-url="{% url 'return_item' %}" class="btn btn-lg btn-primary return_item_send" id="register-complete-button" href="#">CONFIRM RETURN</a>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock internal_content %}

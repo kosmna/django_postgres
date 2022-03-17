@@ -1,0 +1,78 @@
+{% extends 'base_internal.html' %}
+{% load staticfiles %}
+{% load core_extra %}
+{% load i18n %}
+{% load currency %}
+{% load thumbnail %}
+
+{% block internal_content %}
+    <section id="heading">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="/search/" class="back_link">{% trans "Go back to search results" %}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="details">
+        <input type="hidden" id="luggage_id" value="{{object.id}}" />
+        <input type="hidden" id="price_day" value="{{object.day_price|currency:CURRENCY.code}}" />
+        <input type="hidden" id="full_price" value="{{object.full_price|currency:CURRENCY.code}}" />
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="slick-gallery">
+                        {% for img in object.photos.all %}
+                        <div class="img-wrap">
+                            <img src="{{ img.photo | thumbnail_url:"details_big"  }}" />
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="slick-thumbnails">
+                        {% for img in object.photos.all %}
+                        <div class="img-wrap">
+                            <img src="{{ img.photo | thumbnail_url:"details_thumb"  }}" />
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <ul class="stats">
+                        <li>
+                            {{ object.luggage_size.title }}
+                        </li>
+                        <li>
+                            {{ object.luggage_wheels.title }}
+                        </li>
+                        <li>
+                            {{ object.luggage_class.title }}
+                        </li>
+                    </ul>
+                    <h1>{{ object.title }}</h1>
+                    <p>{{ object.details }}</p>
+                    <h3>{% trans "Features" %}</h3>
+                    {{ object.get_features | safe }}
+                    <div class="price">$ {{ object.day_price|currency:CURRENCY.code|money_sfx:CURRENCY.code }}/{% trans "day" %}</div>
+                    <div class="save_text">
+                        {% blocktrans with total_save=total_save|currency:CURRENCY.code sfx=CURRENCY.code|money_sfx_only %}You’re saving $<b>{{ total_save }}</b>{{ sfx }} by renting these items and not buying them. Spend it on your trip{% endblocktrans %}
+                    </div>
+                    <div class="order">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>{% trans "Dates" %}</label>
+                                <input type="text" class="form-control"  name="daterange" id="daterange">
+                            </div>
+                            <div class="col-md-2">
+                                <label>{% trans "Quantity" %}</label>
+                                <input type="number" id="cnt" name="cnt" min="1" class="form-control" value="1" >
+                            </div>
+                        </div>
+                    </div>
+                    <button class="add_to_cart" data-url="{% url 'add_to_cart' %}"><img src="{% static 'img/add_to_cart.svg' %}">{% trans "ADD TO RENT CART" %}</button>
+                    <button class="rent_now" data-url-ok="{% url 'cart' %}" data-url="{% url 'add_to_cart' %}"><img src="{% static 'img/rent_now.svg' %}">{% trans "RENT NOW" %}</button>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock internal_content %}

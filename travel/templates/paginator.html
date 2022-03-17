@@ -1,0 +1,47 @@
+{% load core_extra %}
+
+{% if end_index > 0 %}
+    {% if pages > 1 %}
+        <nav>
+            <div class="text-center">
+                <ul class='page-numbers'>
+                    {% if has_previous %}
+                        <li>
+                            <a rel="nofollow" class="prev page-numbers" href="?{% url_replace request 'page' page_obj.previous_page_number %}">
+                                ◀
+                            </a>
+                        </li>
+                    {% endif %}
+
+                    {% if show_first %}
+                        <li><a rel="nofollow" class="page-numbers" href="?{% url_replace request 'page' 1 %}">1</a></li>
+                        <li><span class="page-numbers dots">…</span></li>
+                    {% endif %}
+
+                    {% for one_page in page_numbers %}
+                        <li>
+                        {% ifequal one_page page %}
+                            <span class="page-numbers">{{one_page}}</span>
+                        {% else %}
+                            <a rel="nofollow" class="page-numbers" href="?{% url_replace request 'page' one_page %}">{{one_page}}</a>
+                        {% endifequal %}
+                        </li>
+                    {% endfor %}
+
+                    {% if show_last %}
+                        <li><span class="page-numbers dots">…</span></li>
+                        <li><a rel="nofollow" class="page-numbers" href="?{% url_replace request 'page' pages %}">{{pages}}</a></li>
+                    {% endif %}
+
+                    {% if has_next %}
+                        <li>
+                            <a rel="nofollow" class="prev page-numbers"  href="?{% url_replace request 'page' page_obj.next_page_number %}">
+                                ▶
+                            </a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+    {% endif %}
+{% endif %}

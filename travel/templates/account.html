@@ -1,0 +1,101 @@
+{% extends 'base_internal.html' %}
+{% load staticfiles %}
+{% load core_extra %}
+{% load i18n %}
+
+{% block internal_content %}
+    <section id="account">
+        <div class="container">
+            <h2>{% trans "Your Account" %}</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text">
+                        <h4>{% trans "Basic Info" %}</h4>
+                        <div class="form">
+                            <form id="account-form" action="{% url 'update_user' %}" method="post" role="form"
+                                  parsley-use-html5-constraints="false" novalidate="" >
+                                {% csrf_token %}
+                                <div class="msg"></div>
+                                <label>{% trans "Email" %}</label>
+                                <input type="email" id="email" name="email" class="form-control" required="" autocomplete="off"
+                                       value={{ user.email }}
+                                       parsley-maxlength="50" parsley-required="true" parsley-type="email"/>
+                                <label>{% trans "Phone" %}</label>
+                                <input type="phone" id="phone" name="phone" class="form-control" required="" autocomplete="off"
+                                       value={{ user.phone }}
+                                       parsley-maxlength="16" parsley-required="true" parsley-type="phone"/>
+                                <label>{% trans "Password" %}</label>
+                                <input type="password" id="password1" name="password1" minlength="8" class="form-control" autocomplete="off">
+                                <label>{% trans "Confirm Password" %}</label>
+                                <input type="password" id="password2" name="password2" minlength="8" class="form-control" autocomplete="off">
+                                <button type="submit" class="btn">{% trans "Update Info" %}</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-offset-2 col-md-6">
+                    <div class="addresses">
+                        <h4>{% trans "Address" %} <a href="#add_address" class="open_popup">{% trans "Add New" %}</a></h4>
+                        <ul>
+                            <li style="display: none">
+                                <div class="radio">
+                                    <input class="radio-primary" type="radio" name="address" id="address_{{ address.pk }}">
+                                    <label for="address_{{ address.pk }}"> {{ address.title }}, {{ address.street}}, {{ address.city.name }}, {{ address.region.code }} {{ address.country.code }} </label>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="#" data-id="{{ address.pk }}" data-url="{% url 'remove_address' %}" class="remove_object">{% trans "Remove" %} </a>
+                                    <img src="{% static 'img/trash.svg' %}">
+                                </div>
+                            </li>
+                            {% for address in address_list %}
+                            <li>
+                                <div class="radio">
+                                    <input class="radio-primary" type="radio" name="address" id="address_{{ address.pk }}">
+                                    <label for="address_{{ address.pk }}"> {{ address.title }}, {{ address.street}}, {{ address.city.name }}, {{ address.region.code }} {{ address.country.code }} </label>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="#" data-id="{{ address.pk }}" data-url="{% url 'remove_address' %}" class="remove_object">{% trans "Remove" %} </a>
+                                    <img src="{% static 'img/trash.svg' %}">
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        <div class="row no_address" {% if address_list|length %}style="display: none"{% endif %}>
+                            <h3>{% trans "You don't have any addresses yet" %}</h3>
+                        </div>
+                    </div>
+                    <div class="payments">
+                        <h4>{% trans "Payment Methods" %} <a href="#add_payment" class="open_popup">{% trans "Add New" %}</a></h4>
+                        <ul>
+                            <li style="display: none">
+                                <div class="radio">
+                                    <input class="radio" type="radio" name="address" id="address_">
+                                    <label for="payment_"> **** **** ****</label>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="#" data-id="" data-url="{% url 'remove_payment' %}" class="remove_object">{% trans "Remove" %} </a>
+                                    <img src="{% static 'img/trash.svg' %}">
+                                </div>
+                            </li>
+                            {% for payment in payment_list %}
+                            <li>
+                                <div class="radio">
+                                    <input class="radio" type="radio" name="address" id="address_{{ payment.pk }}">
+                                    <label for="payment_{{ payment.pk }}"> **** **** **** {{ payment.last4 }} {{ payment.brand }}</label>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="#" data-id="{{ payment.pk }}" data-url="{% url 'remove_payment' %}" class="remove_object">{% trans "Remove" %} </a>
+                                    <img src="{% static 'img/trash.svg' %}">
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        <div class="row no_address" {% if payment_list|length %}style="display: none"{% endif %}>
+                            <h3>{% trans "You don't have any payments yet" %}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock internal_content %}

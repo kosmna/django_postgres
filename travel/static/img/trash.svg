@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="16px" viewBox="0 0 11 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10,1 L8,1 C8,0.448 7.552,0 7,0 L4,0 C3.448,0 3,0.448 3,1 L1,1 C0.448,1 0,1.448 0,2 L11,2 C11,1.448 10.552,1 10,1 L10,1 Z M0,15 C0,15.552 0.448,16 1,16 L10,16 C10.552,16 11,15.552 11,15 L11,3 L0,3 L0,15 L0,15 Z M8,5.5 C8,5.224 8.224,5 8.5,5 C8.776,5 9,5.224 9,5.5 L9,13.5 C9,13.776 8.776,14 8.5,14 C8.224,14 8,13.776 8,13.5 L8,5.5 L8,5.5 Z M5,5.5 C5,5.224 5.224,5 5.5,5 C5.776,5 6,5.224 6,5.5 L6,13.5 C6,13.776 5.776,14 5.5,14 C5.224,14 5,13.776 5,13.5 L5,5.5 L5,5.5 Z M2,5.5 C2,5.224 2.224,5 2.5,5 C2.776,5 3,5.224 3,5.5 L3,13.5 C3,13.776 2.776,14 2.5,14 C2.224,14 2,13.776 2,13.5 L2,5.5 L2,5.5 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="My-Account" transform="translate(-1242.000000, -492.000000)">
+            <g id="Group-33" transform="translate(699.000000, 487.000000)">
+                <g id="Group-30">
+                    <g id="icon_trash" transform="translate(543.000000, 5.000000)">
+                        <g id="Group-15">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Shape" fill="#F9690E" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+{% extends "admin/base.html" %}
+{% load i18n compress %}
+
+{% block title %}{{ title }} | {% trans 'Django site admin' %}{% endblock %}
+
+{% block extrahead %}
+    {% compress css %}
+        <link rel="stylesheet" href="{{ STATIC_URL }}admin/css/style-admin.css" media="all">
+    {% endcompress %}
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

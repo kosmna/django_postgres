@@ -1,0 +1,343 @@
+{% load core_extra %}
+{% load i18n %}
+{% load staticfiles %}
+
+
+<div style="display:none">
+    <div id="refine_search">
+        <div class="modal-container">
+            <div class="complete">
+                <a class="close-btn" href="#" onClick="parent.jQuery.fancybox.close();"></a>
+                <div class="modal-header text-center">
+                    <h4>{% trans "REFINE YOUR SEARCH" %}</h4>
+                </div>
+                <form id="refine-search-form" action="{% url 'search' %}" role="form" parsley-use-html5-constraints="false" novalidate="" >
+                    {% csrf_token %}
+                    <input type="hidden" id="country" name="country" value"">
+                    <input type="hidden" id="region" name="region" value"">
+                    <input type="hidden" id="city" name="city" value"">
+                    <div class="row vcenter">
+                        <div class="col-md-7 col-md-offset-1">
+                            <h3>{% trans "Luggage Size" %}</h3>
+                            <ul>
+                                <li>
+                                    <div class="radio">
+                                        <input class="radio-primary" type="radio" name="size" value="" id="size_all">
+                                        <label for="size_all">{% trans "All Sizes" %}</label>
+                                    </div>
+                                </li>
+                                {% for el in luggage_sizes %}
+                                <li>
+                                    <div class="radio">
+                                        <input class="radio-primary" type="radio" name="size" value="{{ el.pk }}" id="size_{{ el.id }}">
+                                        <label for="size_{{ el.id }}">{{ el.short_title }}</label>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            <h3>{% trans "Luggage Class" %}</h3>
+                            <ul>
+                                <li>
+                                    <div class="radio">
+                                        <input class="radio-primary" type="radio" name="class" value="" id="class_all">
+                                        <label for="class_all">{% trans "All Classes" %}</label>
+                                    </div>
+                                </li>
+                                {% for el in luggage_classes %}
+                                <li>
+                                    <div class="radio">
+                                        <input class="radio-primary" type="radio" name="class" value="{{ el.pk }}" id="class_{{ el.id }}">
+                                        <label for="class_{{ el.id }}">{{ el.short_title }}</label>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            <h3>{% trans "Number of wheels" %}</h3>
+                            <ul>
+                                <li>
+                                    <div class="radio">
+                                        <input class="radio-primary" type="radio" name="wheel" value="" id="wheel_all">
+                                        <label for="wheel_all">{% trans "All Wheels" %}</label>
+                                    </div>
+                                </li>
+                                {% for el in luggage_wheels %}
+                                <li>
+                                    <div class="radio">
+                                        <input class="radio-primary" type="radio" name="wheel" value="{{ el.pk }}" id="wheel_{{ el.id }}">
+                                        <label for="wheel_{{ el.id }}">{{ el.short_title }}</label>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <button type=submit" class="btn btn-primary">{% trans "APPLY FILTERS" %}</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="display:none">
+    <div id="cart-add-success" class="modal_form wide">
+        <div class="modal-container">
+            <div class="complete">
+                <a class="close-btn" href="#" onClick="parent.jQuery.fancybox.close();"></a>
+                    <form>
+                        <h2 class="text-center">{% trans "Luggage added" %}</h2>
+                        <br>
+                        <h3 class="text-center">
+                            {% trans "Cart was successfully updated" %}
+                        </h3>
+                        <br>
+                        <div class="text-center">
+                            <a class="btn btn-lg btn-primary" onClick="parent.jQuery.fancybox.close();" id="register-complete-button" href="#">Close</a>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="display:none">
+    <div id="cart-add-error" class="modal_form wide">
+        <div class="modal-container">
+            <div class="complete">
+                <a class="close-btn" href="#" onClick="parent.jQuery.fancybox.close();"></a>
+                    <form>
+                        <h2 class="text-center">{% trans "Cannot add luggage" %}</h2>
+                        <br>
+                        <h3 class="text-center">
+                            {% trans "Sorry! Your selected luggage type and quantity are not available in the selected dates." %}
+                            <div class="cnt_availiable" style="display:none">{% trans "Only" %} <span class="cnt"></span> {% trans "bags are avaliable for the selected dates" %}</div>
+                        </h3>
+                        <br>
+                        <div class="text-center">
+                            <a class="btn btn-lg btn-primary" onClick="parent.jQuery.fancybox.close();" id="register-complete-button" href="#">Close</a>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="display:none">
+    <div id="reset-success" class="modal_form wide" style="width: 400px;" >
+        <div class="modal-container">
+            <div class="complete">
+                <a class="close-btn" href="#" onClick="parent.jQuery.fancybox.close();"></a>
+                    <form>
+                        <h2 class="text-center">{% trans "Password reset successful" %}</h2>
+                        <br>
+                        <h3 class="text-center">
+                            {% trans "We've emailed you instructions for setting your password. You should be receiving them shortly." %}<br>
+                            <br>
+                            {% trans "If you don't receive an email, please make sure you've entered the address you registered with, and check your spam folder." %}
+                        </h3>
+                        <br>
+                        <div class="text-center">
+                            <a class="btn btn-lg btn-primary" onClick="parent.jQuery.fancybox.close();" id="register-complete-button" href="#">Close</a>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div style="display:none">
+    <div id="reset-popup" class="modal_form">
+        <div class="modal-container">
+            <div class="complete">
+                <a class="close-btn" href="#" onClick="parent.jQuery.fancybox.close();"></a>
+                <form id="reset-form" action="{% url 'api_reset' %}" method="post" role="form"
+                      parsley-use-html5-constraints="false" novalidate="">
+                    {% csrf_token %}
+                    <h2>{% trans "Reset your password" %}</h2>
+                    <br>
+                    <div class="msg"></div>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="{% trans "Email" %}" required="" autocomplete="off"
+                           parsley-type="email" parsley-maxlength="150" parsley-required="true" />
+                    <button type="submit" id="register-submit" class="btn">{% trans "RESET" %}</button>
+                    <div class="text-center">
+                        <p>{% trans "Already have an account?" %} <a href="#signin-checkout" class="open_popup">{% trans "Sign in" %}</a><p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="display:none">
+    <div id="signup-checkout" class="modal_form">
+        <div class="modal-container">
+            <div class="complete">
+                <a class="close-btn" href="#" onClick="parent.jQuery.fancybox.close();"></a>
+                <form id="register-form" action="{% url 'register' %}" method="post" role="form"
+                      parsley-use-html5-constraints="false" novalidate="">
+                    {% csrf_token %}
+                    <h2>{% trans "Signup to checkout" %}</h2>
+                    <br>
+                    <div class="msg"></div>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="{% trans "Email" %}" required="" autocomplete="off"
+                           parsley-type="email"
+                           parsley-maxlength="150" parsley-required="true"
+                           parsley-remote="{% url 'email_validation' %}"/>
+                    <input type="phone" name="phone" class="form-control" placeholder="{% trans "Phone" %}" autocomplete="off"
+                           parsley-maxlength="16" parsley-required="true"/>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="{% trans "Password" %}"  autocomplete="off"
+                           parsley-minlength="5" parsley-maxlength="150" parsley-required="true"/>
+                    <button type="submit" id="register-submit" class="btn">{% trans "SIGNUP" %}</button>
+                    <div class="text-center">
+                        <p>{% trans "Already have an account?" %} <a href="#signin-checkout" class="open_popup">{% trans "Sign in" %}</a><p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="display:none">
+    <div id="signin-checkout" class="modal_form">
+        <div class="modal-container">
+            <div class="complete">
+                <a class="close-btn" href="#" onClick="parent.jQuery.fancybox.close();"></a>
+                <form id="login-form" action="{% url 'login' %}" method="post" role="form"
+                      parsley-use-html5-constraints="false" novalidate="" >
+                    {% csrf_token %}
+                    <h2>{% trans "Signin to checkout" %}</h2>
+                    <br>
+                    <div class="msg"></div>
+                    <input type="email" id="login" name="email" class="form-control" placeholder="{% trans "Email" %}" required="" autocomplete="off"
+                           parsley-maxlength="50" parsley-required="true" parsley-type="email"/>
+                    <input type="password" id="password" name="password" minlength="8" class="form-control" placeholder="{% trans "Password" %}" required="" autocomplete="off"
+                           parsley-required="true">
+                    <button type="submit" id="login-submit" class="btn">{% trans "SIGNIN" %}</button>
+                    <div class="text-center">
+                        <p>{% trans "Don’t have an account?" %} <a href="#signup-checkout" class="open_popup">{% trans "Signup" %}</a><p>
+                        <p><a href="#reset-popup" class="open_popup">{% trans "Forgot Password?" %}</a><p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div style="display:none">
+    <div id="add_address" class="modal_form">
+        <div class="modal-container">
+            <div class="complete">
+                <a class="close-btn" href="#" onClick="parent.jQuery.fancybox.close();"></a>
+                <form id="address-form" action="{% url 'add_address' %}" method="post" role="form"
+                      parsley-use-html5-constraints="false" novalidate="" >
+                    {% csrf_token %}
+                    <h2 class="text-center">{% trans "Add Delivery Address" %}</h2>
+                    {% csrf_token %}
+                    <div class="msg"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="text" id="a_name" name="title" class="form-control" placeholder="{% trans "Name" %}" required="" autocomplete="off"
+                                   parsley-maxlength="256" parsley-required="true"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <input type="text" id="a_street" name="street" class="form-control" placeholder="{% trans "Street Address" %}" required="" autocomplete="off"
+                                   parsley-maxlength="256" parsley-required="true"/>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <select id="a_country" name="country" parsley-required="true">
+                                <option value=''>{% trans "Select Country" %}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <select id="a_region" name="region" disabled="disabled" parsley-required="true">
+                                <option value=''>{% trans "Select State" %}</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <select id="a_city" name="city" disabled="disabled" parsley-required="true">
+                                <option value=''>{% trans "Select City" %}</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" id="a_zipcode" disabled="disabled" name="zipcode" class="form-control" placeholder="{% trans "Zipcode" %}" required="" autocomplete="off"
+                                   parsley-maxlength="256" parsley-required="true"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <button type="submit" id="login-submit" class="btn">{% trans "Add Delivery Address" %}</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div style="display:none">
+    <div id="add_payment" class="modal_form">
+        <div class="modal-container">
+            <div class="complete">
+                <a class="close-btn" href="#" onClick="parent.jQuery.fancybox.close();"></a>
+                <form id="payment-form" action="{% url 'add_payment' %}" method="post" role="form"
+                      parsley-use-html5-constraints="false" novalidate="" >
+                    {% csrf_token %}
+                    <h2 class="text-center">{% trans "Add Payment Method" %}</h2>
+                    {% csrf_token %}
+                    <div class="msg"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="number" id="a_card" data-stripe="number" class="form-control" placeholder="{% trans "Card Number" %}" required="" autocomplete="off"
+                                   parsley-minlength="12" parsley-maxlength="20" parsley-required="true"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="text" id="a_title" data-stripe="name" name="title" class="form-control" placeholder="{% trans "Name on Card" %}" required="" autocomplete="off"
+                                   parsley-maxlength="256" parsley-required="true"/>
+                        </div>
+                    </div>
+                    <div class="row vcenter">
+                        <div class="col-sm-1">
+                            <h4>{% trans "Expiry" %}</h4>
+                        </div>
+                        <div class="col-sm-4">
+                            <select id="p_month" parsley-required="true" data-stripe="exp_month">
+                                <option value=''>{% trans "Month" %}</option>
+                                {% for idx in 12|range_filter %}
+                                <option value='{{idx|add:1}}'>{{idx|add:1}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <select id="p_year" parsley-required="true" data-stripe="exp_year">
+                                <option value=''>{% trans "Year" %}</option>
+                                {% for idx in 5|range_filter %}
+                                <option value='{{idx|add:2017}}'>{{idx|add:2017}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="number" id="p_cvv" data-stripe="cvc" class="form-control" placeholder="{% trans "CVV" %}" required="" autocomplete="off"
+                                   parsley-minlength="3" parsley-maxlength="4" parsley-required="true"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <button type="submit" id="login-submit" class="btn">{% trans "Add Credit Card" %}</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

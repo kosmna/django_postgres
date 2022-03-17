@@ -1,0 +1,186 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block content %}
+    <section id="landing">
+        <div class="fade-bg"></div>
+        <div class="titles">
+            <h2>{% trans "Find the right luggage for you" %}</h2>
+            <h4>{% trans "We serve in 127 Cities in 54 Countries" %}</h4>
+        </div>
+        <div class="search">
+            <form id="search-form" action="{% url 'search' %}" role="form" parsley-use-html5-constraints="false" novalidate="" >
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-sm-4">
+                        <select id="country" name="country" parsley-required="true">
+                            <option value=''>{% trans "Select Country" %}</option>
+                            {% for country in countries %}
+                            <option value="{{country.id}}">{{ country.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-sm-4">
+                        <select id="region" name="region" disabled="disabled" parsley-required="true">
+                            <option value=''>{% trans "Select State" %}</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-4">
+                        <select id="city" name="city" disabled="disabled" parsley-required="true">
+                            <option value=''>{% trans "Select City" %}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>{% trans "What kind of luggage are you looking for?" %}</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-2 col-xs-6 col-sm-5">
+                        <select id="size" name="size">
+                            <option value="">{% trans "All Sizes" %}</option>
+                            {% for size in sizes %}
+                            <option value="{{size.id}}">{{ size.title }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-sm-4 col-xs-2">
+                        <button type=submit" class="btn btn-primary">{% trans "SEARCH" %}</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2 class="center">{% trans "About GetLuggage" %}</h2>
+            <p>
+            {% trans "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis" %}
+            </p>
+        </div>
+    </section>
+    <section id="why-rent">
+        <div class="container">
+            <h2 class="center">{% trans "Why rent luggage?" %}</h2>
+            <div class="row">
+                <div class="bg-img1 col-md-6">
+                    <img src="{% static 'img/img1.png' %}" >
+                    <p>
+                    {% trans "Occupies too<br> much space" %}
+                    </p>
+                </div>
+                <div class="bg-img2 col-md-6">
+                    <img src="{% static 'img/img2.png' %}" >
+                    <p>
+                    {% trans "Ditch your old<br> looking suitcase" %}
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="bg-img3 col-md-12">
+                    <img src="{% static 'img/img3.png' %}" >
+                    <p>
+                    {% trans "Save hundreds of dollars and <br> spend it on your actual trip" %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="how-works">
+        <div class="container">
+            <h2 class="center">{% trans "How it works" %}</h2>
+            <div class="row icons">
+                <div class="col-md-4">
+                    <img src="{% static 'img/img-backpack.png' %}">
+                    <span>1</span>
+                    <p>
+                    {% trans "Choose the right luggage for your trip lorem ipsum dolor sit amet adipising elit" %}
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="{% static 'img/img-shopping-cart.png' %}">
+                    <span>2</span>
+                    <p>
+                    {% trans "Add to cart and checkout lorem ipsum dolor sit amet adipising elit" %}
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="{% static 'img/img-courier.png' %}">
+                    <span>3</span>
+                    <p>
+                    {% trans "We deliver the luggage at your doorsteps lorem ipsum dolor sit amet adipising elit" %}
+                    </p>
+                </div>
+            </div>
+            <div class="row line">
+                <div class="col-md-offset-2 col-md-8">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonial">
+        <div class="container">
+            <h2 class="center">{% trans "Testimonials" %}</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text">
+                        <h3>{% trans "Amazing!!" %}</h3>
+                        <p>
+                        {% trans "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ull1" %}
+                        </p>
+                        <div class="name">
+                            {% trans "Deborah Simmons" %}
+                        </div>
+                        <div class="city">
+                            {% trans "Photojournalist, Texas" %}
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="{% static 'img/img-test-1.png' %}">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text">
+                        <h3>{% trans "Made life easier!!" %}</h3>
+                        <p>
+                        {% trans "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ull2" %}
+                        </p>
+                        <div class="name">
+                            {% trans "Anthony Hopkins" %}
+                        </div>
+                        <div class="city">
+                            {% trans "Backpacker, San Francisco" %}
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="{% static 'img/img-test-2.png' %}">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text">
+                        <h3>{% trans "Best Service Ever" %}</h3>
+                        <p>
+                        {% trans "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ull3" %}
+                        </p>
+                        <div class="name">
+                            {% trans "Jonathan Rogers" %}
+                        </div>
+                        <div class="city">
+                            {% trans "Blogger, Rio De Janeiro" %}
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="{% static 'img/img-test-3.png' %}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="get-started">
+        <div class="container">
+            <h2 class="center">{% trans "Why wait? <strong>Start packing!</strong>" %}</h2>
+            <a href="#" class="btn btn-primary">{% trans "GET STARTED" %}</a>
+        </div>
+    </section>
+{% endblock content %}

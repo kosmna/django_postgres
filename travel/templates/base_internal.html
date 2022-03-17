@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block content %}
+<section id="internal-wrap">
+    {% block internal_content %}
+    {% endblock internal_content %}
+</section>
+{% endblock content %}
+
+{% block footer %}
+<section id="footer" class="internal">
+    <div class="container">
+        <div class="social pull-right">
+            <a href=""><img src="{% static 'img/social-tw.png' %}"</a>
+            <a href=""><img src="{% static 'img/social-in.png' %}"</a>
+            <a href=""><img src="{% static 'img/social-gp.png' %}"</a>
+            <a href=""><img src="{% static 'img/social-fb.png' %}"</a>
+        </div>
+        <p class="pull-left"><small>{% trans "©2016 GetLugagge Inc. All rights reserved." %}</small></p>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,749 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-27 17:23+0300\n"
+"PO-Revision-Date: 2016-10-19 03:31+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.7.6\n"
+
+#: luggage/templates/_dialogs.html:12
+msgid "REFINE YOUR SEARCH"
+msgstr "REFINA TU BUSQUEDA"
+
+#: luggage/templates/_dialogs.html:21
+msgid "Luggage Size"
+msgstr "Tamaño de maleta"
+
+#: luggage/templates/_dialogs.html:26 luggage/templates/home.html.py:41
+msgid "All Sizes"
+msgstr "Todos los tamaños"
+
+#: luggage/templates/_dialogs.html:38
+msgid "Luggage Class"
+msgstr "Tipo de maleta"
+
+#: luggage/templates/_dialogs.html:43
+msgid "All Classes"
+msgstr "Todos los tamaños"
+
+#: luggage/templates/_dialogs.html:55
+msgid "Number of wheels"
+msgstr "Numero de llantas"
+
+#: luggage/templates/_dialogs.html:60
+msgid "All Wheels"
+msgstr "Todos los tamaños"
+
+#: luggage/templates/_dialogs.html:74
+msgid "APPLY FILTERS"
+msgstr "APLICAR FILTROS"
+
+#: luggage/templates/_dialogs.html:89
+msgid "Luggage added"
+msgstr "Maletra agregada"
+
+#: luggage/templates/_dialogs.html:92
+msgid "Cart was successfully updated"
+msgstr "El carrito se actualizo exitosamente"
+
+#: luggage/templates/_dialogs.html:110
+msgid "Cannot add luggage"
+msgstr "No se puede agregar equipaje"
+
+#: luggage/templates/_dialogs.html:113
+msgid ""
+"Sorry! Your selected luggage type and quantity are not available in the "
+"selected dates."
+msgstr ""
+"¡Lo siento! El tipo y cantidad de equipaje seleccionado no están disponibles "
+"en las fechas seleccionadas."
+
+#: luggage/templates/_dialogs.html:114
+msgid "Only"
+msgstr "Sólo"
+
+#: luggage/templates/_dialogs.html:114
+msgid "bags are avaliable for the selected dates"
+msgstr "bolsas están disponibles para las fechas seleccionadas"
+
+#: luggage/templates/_dialogs.html:132
+msgid "Password reset successful"
+msgstr "Se restablecio la contraseña exitosamente"
+
+#: luggage/templates/_dialogs.html:135
+msgid ""
+"We've emailed you instructions for setting your password. You should be "
+"receiving them shortly."
+msgstr "Te hemos enviado un correo con una liga para restablecer tu contraseña"
+
+#: luggage/templates/_dialogs.html:137
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with, and check your spam folder."
+msgstr ""
+"Si no recibes el correo, por favor verifica que hayas ingresado la dirreccon "
+"de correo correcta"
+
+#: luggage/templates/_dialogs.html:158
+msgid "Reset your password"
+msgstr "Restablecer contraseña"
+
+#: luggage/templates/_dialogs.html:161 luggage/templates/_dialogs.html:184
+#: luggage/templates/_dialogs.html:213 luggage/templates/account.html.py:19
+#: luggage/templates/login.html:17 luggage/templates/signup.html.py:17
+msgid "Email"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:163
+msgid "RESET"
+msgstr "RESTABLECER"
+
+#: luggage/templates/_dialogs.html:165 luggage/templates/_dialogs.html:194
+#: luggage/templates/signup.html.py:27
+msgid "Already have an account?"
+msgstr "¿No tienes una cuenta?"
+
+#: luggage/templates/_dialogs.html:165 luggage/templates/_dialogs.html:194
+#: luggage/templates/signup.html.py:27
+msgid "Sign in"
+msgstr "Regístrate"
+
+#: luggage/templates/_dialogs.html:181
+msgid "Signup to checkout"
+msgstr "Registrate para pagar"
+
+#: luggage/templates/_dialogs.html:188 luggage/templates/account.html.py:23
+#: luggage/templates/signup.html:21
+msgid "Phone"
+msgstr "Teléfono"
+
+#: luggage/templates/_dialogs.html:190 luggage/templates/_dialogs.html:215
+#: luggage/templates/account.html.py:27 luggage/templates/login.html:19
+#: luggage/templates/signup.html.py:23
+msgid "Password"
+msgstr "Contraseña"
+
+#: luggage/templates/_dialogs.html:192 luggage/templates/signup.html.py:25
+msgid "SIGNUP"
+msgstr "REGÍSTRATE"
+
+#: luggage/templates/_dialogs.html:210
+msgid "Signin to checkout"
+msgstr "Inicie sesión para pagar"
+
+#: luggage/templates/_dialogs.html:217 luggage/templates/already_reset.html:19
+#: luggage/templates/login.html:21
+msgid "SIGNIN"
+msgstr "INGRESAR"
+
+#: luggage/templates/_dialogs.html:219 luggage/templates/login.html.py:23
+msgid "Don’t have an account?"
+msgstr "¿No tienes una cuenta?"
+
+#: luggage/templates/_dialogs.html:219 luggage/templates/login.html.py:23
+msgid "Signup"
+msgstr "Regístrate"
+
+#: luggage/templates/_dialogs.html:220 luggage/templates/login.html.py:24
+msgid "Forgot Password?"
+msgstr "Restablecer contraseña"
+
+#: luggage/templates/_dialogs.html:237 luggage/templates/_dialogs.html:276
+msgid "Add Delivery Address"
+msgstr "Agregar dirrección de entrega"
+
+#: luggage/templates/_dialogs.html:242
+msgid "Name"
+msgstr "Nombre"
+
+#: luggage/templates/_dialogs.html:248
+msgid "Street Address"
+msgstr "Dirección"
+
+#: luggage/templates/_dialogs.html:254 luggage/templates/home.html.py:18
+msgid "Select Country"
+msgstr "Seleccionar país"
+
+#: luggage/templates/_dialogs.html:261 luggage/templates/home.html.py:26
+msgid "Select State"
+msgstr "Seleccionar estado"
+
+#: luggage/templates/_dialogs.html:266 luggage/templates/home.html.py:31
+msgid "Select City"
+msgstr "Seleccionar ciudad"
+
+#: luggage/templates/_dialogs.html:270
+msgid "Zipcode"
+msgstr "Introduzca código postal"
+
+#: luggage/templates/_dialogs.html:294
+msgid "Add Payment Method"
+msgstr "Métodos de Pago"
+
+#: luggage/templates/_dialogs.html:299
+msgid "Card Number"
+msgstr "Numero de tarjeta"
+
+#: luggage/templates/_dialogs.html:305
+msgid "Name on Card"
+msgstr "Nombre en la tarjeta"
+
+#: luggage/templates/_dialogs.html:311
+msgid "Expiry"
+msgstr "Expira"
+
+#: luggage/templates/_dialogs.html:315
+msgid "Month"
+msgstr "Mes"
+
+#: luggage/templates/_dialogs.html:323
+msgid "Year"
+msgstr "Año"
+
+#: luggage/templates/_dialogs.html:330
+msgid "CVV"
+msgstr ""
+
+#: luggage/templates/_dialogs.html:336
+msgid "Add Credit Card"
+msgstr "Agregar Tarjeta"
+
+#: luggage/templates/account.html:9
+msgid "Your Account"
+msgstr "Su Cuenta"
+
+#: luggage/templates/account.html:13
+msgid "Basic Info"
+msgstr "Información básica"
+
+#: luggage/templates/account.html:29
+msgid "Confirm Password"
+msgstr "Confirmar contraseña"
+
+#: luggage/templates/account.html:31
+msgid "Update Info"
+msgstr "Actualizar perfil"
+
+#: luggage/templates/account.html:38
+msgid "Address"
+msgstr "Dirección"
+
+#: luggage/templates/account.html:38 luggage/templates/account.html.py:68
+msgid "Add New"
+msgstr "Agregar Nuevo"
+
+#: luggage/templates/account.html:46 luggage/templates/account.html.py:57
+#: luggage/templates/account.html:76 luggage/templates/account.html.py:87
+#: luggage/templates/cart.html:49 luggage/templates/cart.html.py:115
+#: luggage/templates/cart.html:126 luggage/templates/cart.html.py:162
+#: luggage/templates/cart.html:173
+msgid "Remove"
+msgstr "Remover"
+
+#: luggage/templates/account.html:64 luggage/templates/cart.html.py:132
+msgid "You don't have any addresses yet"
+msgstr "Usted no tiene órdenes activas"
+
+#: luggage/templates/account.html:68
+msgid "Payment Methods"
+msgstr "Métodos de Pago"
+
+#: luggage/templates/account.html:94 luggage/templates/cart.html.py:179
+msgid "You don't have any payments yet"
+msgstr "Usted no tiene órdenes activas"
+
+#: luggage/templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr ""
+
+#: luggage/templates/already_reset.html:13
+msgid "Password reset complete"
+msgstr "Contraseña restablecida"
+
+#: luggage/templates/already_reset.html:16
+msgid "Your password has been set.  You may go ahead and log in"
+msgstr "Tu contraseña ha quedado restablecida. Ya puedes iniciar sesión"
+
+#: luggage/templates/base.html:76
+msgid "Toggle navigation"
+msgstr "Navegación"
+
+#: luggage/templates/base.html:81
+msgid "Get Luggage"
+msgstr "Luggary"
+
+#: luggage/templates/base.html:87 luggage/templates/cart.html.py:92
+#: luggage/templates/orders.html:72
+msgid "Find your luggage"
+msgstr "Buscar maletas"
+
+#: luggage/templates/base.html:91
+msgid "How does it work"
+msgstr "¿Cómo funciona?"
+
+#: luggage/templates/base.html:94 luggage/templates/home.html.py:124
+msgid "Testimonials"
+msgstr "Testimonios"
+
+#: luggage/templates/base.html:99
+msgid "Current Orders"
+msgstr "Órdenes activas"
+
+#: luggage/templates/base.html:103
+msgid "Your account"
+msgstr "Mi cuenta"
+
+#: luggage/templates/base.html:106
+msgid "Settings"
+msgstr "Preferencias"
+
+#: luggage/templates/base.html:109
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: luggage/templates/base.html:115
+msgid "Login"
+msgstr "Iniciar sesión"
+
+#: luggage/templates/base.html:124
+msgid "Cart"
+msgstr "Carrito"
+
+#: luggage/templates/base.html:149
+msgid "Got Questions? Call us on +8723 3764873"
+msgstr "¿Tienes preguntas? Llamanos al +52 55 67190944"
+
+#: luggage/templates/base.html:156 luggage/templates/base_internal.html:21
+msgid "©2016 GetLugagge Inc. All rights reserved."
+msgstr "© 2016 Luggary Inc. Todos los derechos reservados."
+
+#: luggage/templates/cart.html:35 luggage/templates/details.html.py:56
+#: luggage/templates/orders.html:34 luggage/templates/search.html.py:50
+msgid "day"
+msgstr "día"
+
+#: luggage/templates/cart.html:38 luggage/templates/details.html.py:67
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: luggage/templates/cart.html:42 luggage/templates/details.html.py:63
+msgid "Dates"
+msgstr "Fechas"
+
+#: luggage/templates/cart.html:58
+msgid "Coupon code:"
+msgstr "Código promocional:"
+
+#: luggage/templates/cart.html:60
+msgid "Apply"
+msgstr "Aplicar"
+
+#: luggage/templates/cart.html:65
+#, python-format
+msgid "Subtotal (<span>%(count)s</span> Items)"
+msgstr "Subtotal (<span>%(count)s </span> Elementos)"
+
+#: luggage/templates/cart.html:74 luggage/templates/details.html.py:58
+#, python-format
+msgid ""
+"You’re saving $<b>%(total_save)s</b>%(sfx)s by renting these items and not "
+"buying them. Spend it on your trip"
+msgstr ""
+"Ahorre $<b>%(total_save)s</b>%(sfx)s por rentar este articulo y no comprarlo."
+
+#: luggage/templates/cart.html:81
+msgid "CHECKOUT NOW"
+msgstr "RENTAR"
+
+#: luggage/templates/cart.html:87
+msgid "Your cart is empty"
+msgstr "Tu carrito esta vacío"
+
+#: luggage/templates/cart.html:104
+msgid "Select Address"
+msgstr "Dirección"
+
+#: luggage/templates/cart.html:136
+msgid "Add Another Address"
+msgstr "Agregar otra dirección"
+
+#: luggage/templates/cart.html:137
+msgid "Deliver To This Address"
+msgstr "Entregar a esta dirección"
+
+#: luggage/templates/cart.html:151
+msgid "Select Payment"
+msgstr "Selecciona un estado"
+
+#: luggage/templates/cart.html:183
+msgid "Add Another Card"
+msgstr "Agregar otra tarjeta"
+
+#: luggage/templates/cart.html:184
+msgid "Confirm Rental"
+msgstr "Confirmar contraseña"
+
+#: luggage/templates/cart.html:198
+#, fuzzy
+#| msgid "Rental Order Placed"
+msgid "Rental Order Error"
+msgstr "Pedido realizado"
+
+#: luggage/templates/cart.html:201
+msgid ""
+"Your order cannot be placed. Please check that your card has enough found to "
+"make this order, and try later. If the the error remains, please contact us."
+msgstr ""
+"Tu orden no ha podido ser procesada. Por favor verifca que tu tarjeta tengo "
+"el saldo disponible para satisfacer el cargo. Si el error continua por favor "
+"comunicate con nosotros."
+
+#: luggage/templates/cart.html:218
+msgid "Rental Order Placed"
+msgstr "Pedido realizado"
+
+#: luggage/templates/cart.html:221
+msgid ""
+"Your order has been placed <br>and wil be delivered at your<br> doorsteps in "
+"4-6 hours."
+msgstr ""
+"Tu pedido ha sido realizado <br>y lo entregaremos a tu dirrecion<br> 24 "
+"horas antes de tu viaje"
+
+#: luggage/templates/details.html:13
+msgid "Go back to search results"
+msgstr "Volver a los resultados de búsqueda,"
+
+#: luggage/templates/details.html:54
+msgid "Features"
+msgstr "Características"
+
+#: luggage/templates/details.html:72
+msgid "ADD TO RENT CART"
+msgstr "AÑADIR AL CARRITO"
+
+#: luggage/templates/details.html:73
+msgid "RENT NOW"
+msgstr "RENTAR"
+
+#: luggage/templates/home.html:9
+msgid "Find the right luggage for you"
+msgstr "Renta la maleta adecuada para tu viaje"
+
+#: luggage/templates/home.html:10
+msgid "We serve in 127 Cities in 54 Countries"
+msgstr "Ahorra Dinero, Espacio y Tiempo"
+
+#: luggage/templates/home.html:36
+msgid "What kind of luggage are you looking for?"
+msgstr "¿Qué tipo de maleta estas buscando?"
+
+#: luggage/templates/home.html:48
+msgid "SEARCH"
+msgstr "BUSCAR"
+
+#: luggage/templates/home.html:56
+msgid "About GetLuggage"
+msgstr "Acerca de Luggary"
+
+#: luggage/templates/home.html:58
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+"quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo "
+"consequat. Duis"
+msgstr ""
+"En Luggary llevamos tu experiencia de viaje a un nuevo nivel! Renta las "
+"maletas que necesitas y únicamente paga por los días que las utilices. No "
+"gastes dinero en nuevas maletas que solo usas una vez al año. Deshazte de "
+"tus maletas viejas, desgastadas y rotas y deja de amontonarlas en tu casa. "
+"Ahorra dinero, espacio y tiempo y comienza a rentar… Ahh! Por cierto, te las "
+"llevamos a la puerta de tu casa."
+
+#: luggage/templates/home.html:64
+msgid "Why rent luggage?"
+msgstr "¿Por qué rentar maletas?"
+
+#: luggage/templates/home.html:69
+msgid "Occupies too<br> much space"
+msgstr "Ocupa <br>demasiado espacio"
+
+#: luggage/templates/home.html:75
+msgid "Ditch your old<br> looking suitcase"
+msgstr "Deja tus maletas<br>viejas y rotas"
+
+#: luggage/templates/home.html:83
+msgid "Save hundreds of dollars and <br> spend it on your actual trip"
+msgstr "Ahorrar dinero que puedes<br>utilizar en tu viaje"
+
+#: luggage/templates/home.html:91
+msgid "How it works"
+msgstr "Cómo funciona"
+
+#: luggage/templates/home.html:97
+msgid ""
+"Choose the right luggage for your trip lorem ipsum dolor sit amet adipising "
+"elit"
+msgstr "Selecciona las maletas adecuadas para tu viaje "
+
+#: luggage/templates/home.html:104
+msgid "Add to cart and checkout lorem ipsum dolor sit amet adipising elit"
+msgstr "Agrega al carrito, elige las fechas y finaliza tu pedido"
+
+#: luggage/templates/home.html:111
+msgid ""
+"We deliver the luggage at your doorsteps lorem ipsum dolor sit amet "
+"adipising elit"
+msgstr "Entregamos tu pedido 24 hrs antes de tu viaje "
+
+#: luggage/templates/home.html:128
+msgid "Amazing!!"
+msgstr "Salvavidas!"
+
+#: luggage/templates/home.html:130
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+"quis nostrud exercitation ull1"
+msgstr ""
+"Me salio un viaje de emergencia y no tenia donde empacar! Luggary me salvo! "
+"Me entregaron las maletas en menos de 24 hrs"
+
+#: luggage/templates/home.html:133
+msgid "Deborah Simmons"
+msgstr "Leonor Martinez"
+
+#: luggage/templates/home.html:136
+msgid "Photojournalist, Texas"
+msgstr "Entreprenuer, México"
+
+#: luggage/templates/home.html:145
+msgid "Made life easier!!"
+msgstr "¡Me hizo la vida más fácil!"
+
+#: luggage/templates/home.html:147
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+"quis nostrud exercitation ull2"
+msgstr ""
+"Vivo en un departamento pequeño y mis maletas ocupaban mucho espacio. My "
+"amigo me recomendó Luggary; ya me deshice de todas mis maletas y ahora rento "
+"cuando necesito viajar!"
+
+#: luggage/templates/home.html:150
+msgid "Anthony Hopkins"
+msgstr "Seung Lee"
+
+#: luggage/templates/home.html:153
+msgid "Backpacker, San Francisco"
+msgstr "Estudiante, Chicago"
+
+#: luggage/templates/home.html:162
+msgid "Best Service Ever"
+msgstr "La mejor idea!"
+
+#: luggage/templates/home.html:164
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+"quis nostrud exercitation ull3"
+msgstr ""
+"Me encanta este nuevo concepto! Ya no tengo que gastar en maletas caras y "
+"espaciosas que aparte rara vez utilizo y no tengo donde guardar!"
+
+#: luggage/templates/home.html:167
+msgid "Jonathan Rogers"
+msgstr "Therese Gotlib"
+
+#: luggage/templates/home.html:170
+msgid "Blogger, Rio De Janeiro"
+msgstr "Architect, Miami"
+
+#: luggage/templates/home.html:182
+msgid "Why wait? <strong>Start packing!</strong>"
+msgstr "¿Que esperas? <strong>Empaca ahora!</strong>"
+
+#: luggage/templates/home.html:183
+msgid "GET STARTED"
+msgstr "RENTAR YA!"
+
+#: luggage/templates/login.html:15
+msgid "Signin"
+msgstr "Ingresar"
+
+#: luggage/templates/new_password.html:12
+msgid "Reset pasword"
+msgstr "Restablecer contraseña"
+
+#: luggage/templates/new_password.html:13
+msgid "Please enter your new password"
+msgstr "Por favor ingresa tu nueva contraseña"
+
+#: luggage/templates/new_password.html:18
+msgid "Submit"
+msgstr "Aceptar"
+
+#: luggage/templates/new_password.html:21
+msgid "This reset link is no longer valid!"
+msgstr "Esta liga ya no es valida"
+
+#: luggage/templates/orders.html:53
+msgid "RETURN THE ITEM"
+msgstr "DEVOLVER EL ARTÍCULO"
+
+#: luggage/templates/orders.html:61
+msgid "RETURN ALL ITEMS"
+msgstr "DEVOLVER TODOS LOS ARTICULOS"
+
+#: luggage/templates/orders.html:67
+msgid "You dont have active orders"
+msgstr "Usted no tiene órdenes activas"
+
+#: luggage/templates/orders.html:84
+msgid "Request Return Pickup"
+msgstr "Solicitar recolección"
+
+#: luggage/templates/orders.html:87
+msgid "Choose a conveninent time for pickup. "
+msgstr "Seleccione un horario conveniente para la recolección"
+
+#: luggage/templates/orders.html:93
+msgid "Return Time"
+msgstr "Tiempo de recolección"
+
+#: luggage/templates/search.html:14
+#, python-format
+msgid ""
+"\n"
+"                    Showing %(from)s-%(to)s of %(count)s results for "
+"%(size)s available at %(country)s, %(region)s %(city)s\n"
+"                    "
+msgstr ""
+"\n"
+"Mostrando %(from)s-%(to)s de %(count)s resultados para %(size)s disponible "
+"en %(country)s, %(region)s %(city)s\n"
+"                "
+
+#: luggage/templates/search.html:19
+msgid "Refine Search"
+msgstr "Refinar tu búsqueda"
+
+#: luggage/templates/search.html:61
+msgid "Nothing found"
+msgstr "No se encontró nada"
+
+#: luggage/templates/search.html:62
+msgid "Try to refine you search criteria"
+msgstr "Intente refinar sus criterios de busqueda"
+
+#: luggage/templates/signup.html:15
+msgid "Signup to get started"
+msgstr "Registrate para comenzar"
+
+#: luggage/views.py:272 luggage/views.py:361
+msgid "User with this email already exists"
+msgstr "El usuario con este correo electrónico ya existe"
+
+#: luggage/views.py:277
+#, fuzzy
+#| msgid "Reset pasword"
+msgid "New password"
+msgstr "Restablecer contraseña"
+
+#: luggage/views.py:279
+msgid "New password confirmation"
+msgstr "Nueva confirmación de contraseña"
+
+#: luggage/views.py:307
+msgid "Invalid username."
+msgstr "Nombre de usuario no válido."
+
+#: luggage/views.py:337
+msgid "User account has been disabled."
+msgstr "Se ha deshabilitado la cuenta de usuario."
+
+#: luggage/views.py:341
+msgid "Invalid username/password."
+msgstr "Usuario / contraseña invalida"
+
+#: luggage/views.py:359
+msgid "You are already registered"
+msgstr "Usted ya está registrado"
+
+#: luggage/views.py:379
+msgid "Not all required field were filled"
+msgstr "No todos los campos obligatorios se rellenaron"
+
+#: luggage/views.py:492
+#, fuzzy
+#| msgid "bags are avaliable for the selected dates"
+msgid "not enough bags for selected dates"
+msgstr "bolsas están disponibles para las fechas seleccionadas"
+
+#: luggage/views.py:555
+#, fuzzy
+#| msgid "Add Payment Method"
+msgid "Cannot add payment method"
+msgstr "Métodos de Pago"
+
+#: luggage/views.py:621
+#, fuzzy
+#| msgid "Cannot add luggage"
+msgid "Cannot add address"
+msgstr "No se puede agregar equipaje"
+
+#: luggage/views.py:743
+msgid "Email was updated"
+msgstr "Email actualizado"
+
+#: luggage/views.py:747
+msgid "Phone was updated"
+msgstr "Teléfono actualizado"
+
+#: luggage/views.py:751
+#, fuzzy
+#| msgid "Password reset complete"
+msgid "Password was updated"
+msgstr "Contraseña restablecida"
+
+#: luggage/views.py:772
+msgid "Coupon is expired"
+msgstr "El cupón ha caducado"
+
+#: luggage/views.py:820
+msgid "Invalid code"
+msgstr "Código inválido"
+
+#: project/settings.py:52
+msgid "English"
+msgstr "Inglés"
+
+#: project/settings.py:53
+msgid "Spanish"
+msgstr "Español"
+
+#~ msgid "Days"
+#~ msgstr "Días"
+
+#~ msgid "Subtotal (2 Items)"
+#~ msgstr "Subtotal (2 artículos)"
+
+#~ msgid ""
+#~ "You save $213 by renting this item and not buying it. Spend it on your "
+#~ "trip"
+#~ msgstr ""
+#~ "Ahorre $213 por el alquiler de este artículo y no comprarlo. Pasar en su "
+#~ "viaje"

@@ -1,0 +1,26 @@
+{% extends 'base_nofooter.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block content %}
+    <section id="landing" class="auth">
+        <div class="fade-bg"></div>
+        <div class="container login">
+            <div class="row">
+                <div class="col-sm-offset-3 col-md-offset-3 col-sm-6 col-md-6">
+                    <div class="form">
+                        <form>
+                            <h1 class="text-center">{% trans "Password reset complete" %}</h1>
+                            <br>
+                            <h3 class="text-center">
+                                {% trans "Your password has been set.  You may go ahead and log in" %}<br>
+                            </h3>
+                            <br>
+                            <a href="{% url 'signin' %}" id="reset-submit" class="btn btn-primary btn-lg">{% trans "SIGNIN" %}</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+{% endblock content %}
